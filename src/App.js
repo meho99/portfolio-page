@@ -1,11 +1,30 @@
 import React from 'react';
+import styled from 'styled-components'
 import Menu from './components/menu'
+import AboutContainer from './components/about'
+import SkillsContainer from './components/skills'
+import ProjectsContainer from './components/projects'
+import ContactContainer from './components/contact'
+import Footer from './components/footer'
+
+const Container = styled.div`
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center
+
+`
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
         <Menu/>
-    </div>
+        <AboutContainer/>
+        <SkillsContainer/>
+        <ProjectsContainer/>
+        <ContactContainer/>
+        <Footer/>
+    </Container>
   );
 }
 

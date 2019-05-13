@@ -11,11 +11,16 @@ const Container = styled.div`
     flex-direction: row;
     width: 100vw;
     height: 3vw;
-    background-color: #263238;
-    border-bottom: 2px solid white;
+    background-color: #151a21;
     justify-content: space-evenly;
+    color: white;
     align-items: center;
     border-bottom: 0.3vw solid #9e9d24;
+    position: fixed;
+
+    @media(max-width: 758px){ 
+        height: 3.8vw;
+    }
 
 `
 const Logo= styled.p`
@@ -23,6 +28,9 @@ const Logo= styled.p`
     width: 30vw;
     font-size: 2vw;
     text-decoration: underline;
+    @media(max-width: 758px){ 
+        font-size: 3vw;
+    }
 `
 // ----- komponent -----
 
@@ -32,8 +40,9 @@ export default class Menu extends Component {
         this.state = {
             hrefs: [
                 ['O MNIE', '#about'],
+                ['UMIEJĘTNOŚCI', '#skills'],
                 ['MOJE PROJEKTY', '#offer'],
-                ['KONTAKT', '#contact']
+                ['KONTAKT', '#contact'],
             ]
         };
     }
