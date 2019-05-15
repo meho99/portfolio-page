@@ -8,7 +8,6 @@ import FaceImage from './faceImage'
 
 const Container = styled.div`
     width: 100vw;
-    margin-top: 3vw;
     background-color: #f2f2f2;
     display: flex;
     text-align: center;

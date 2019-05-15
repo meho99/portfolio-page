@@ -10,7 +10,7 @@ const Container = styled.div`
     background-color: #9e9d24;
     margin: 0.5vw 1vw;
     padding: 0.2vw;
-    width: 23vw;
+    width: 25vw;
     border-radius: 12px;
     -webkit-box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
     -moz-box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);

@@ -17,7 +17,7 @@ const Container = styled.div`
     align-items: center;
     border-bottom: 0.3vw solid #9e9d24;
     position: fixed;
-
+    z-index: 5;
     @media(max-width: 758px){ 
         height: 3.8vw;
     }

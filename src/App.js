@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
+
+import StartComonent from './components/start'
 import Menu from './components/menu'
 import AboutContainer from './components/about'
 import SkillsContainer from './components/skills'
@@ -15,15 +17,16 @@ const Container = styled.div`
 
 `
 
-function App() {
+const App = () => {
   return (
     <Container className="App">
-        <Menu/>
-        <AboutContainer/>
-        <SkillsContainer/>
-        <ProjectsContainer/>
-        <ContactContainer/>
-        <Footer/>
+      <Menu />
+      <StartComonent />
+      <AboutContainer />
+      <SkillsContainer />
+      <ProjectsContainer />
+      <ContactContainer />
+      <Footer />
     </Container>
   );
 }
