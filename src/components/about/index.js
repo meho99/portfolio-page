@@ -2,8 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components'
-import faceImage from './assets/face.jpg'
-
+import FaceImage from './faceImage'
 
 // ----- style -----
 
@@ -20,15 +19,6 @@ const Header = styled.h1`
     color: #9e9d24 ;
     font-size: 3vw;
     margin: 4vw;
-`
-const Face = styled.img`
-    width: 6.6vw;
-    border: 2px solid #9e9d24;
-    border-radius: 12px;
-    height: 7.9vw;
-    -webkit-box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
-    -moz-box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
-    box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
 `
 const BottomDiv = styled.div`
     display: flex;
@@ -62,7 +52,7 @@ const AboutContainer = () =>
             </Header>
         <BottomDiv>
             <LeftDiv>
-                <Face src={faceImage} alt='faceImage' />
+                <FaceImage />
                 <UnderFace big >Michał Topa</UnderFace>
                 <UnderFace  >Front-End Developer</UnderFace>
             </LeftDiv>
