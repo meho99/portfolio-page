@@ -6,8 +6,8 @@ import styled from 'styled-components'
 // -----  style  -----
 
 const Container = styled.div`
-    color: white;
-    background-color: #9e9d24;
+    color: #f2f2f2;
+    background-color: #3b4048;
     margin: 0.5vw 1vw;
     padding: 0.2vw;
     width: 25vw;
@@ -17,7 +17,7 @@ const Container = styled.div`
     box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
     &:hover{
         cursor: pointer;
-        background-color: #6c6f00;
+        background-color: #151a21;
     }
 `
 

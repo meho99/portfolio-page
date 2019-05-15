@@ -24,9 +24,6 @@ const Background = styled.img`
 `
 const Logo= styled.p`
     color: #9e9d24 ;
-    -webkit-box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
-    -moz-box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
-    box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
     font-size: 5vw;
     position: absolute;
     left: 39vw;

@@ -51,16 +51,16 @@ export default class SkillsContainer extends Component {
                 <SmallHeader>Umiem :</SmallHeader>
                 <Table>
                     {
-                        this.state.skills.map(i =>
-                            <Skill skillName={i} />
+                        this.state.skills.map((i, index) =>
+                            <Skill skillName={i} key={index} />
                         )
                     }
                 </Table>
                 <SmallHeader>Znam podstawy :</SmallHeader>
                 <Table>
                     {
-                        this.state.learned.map(i =>
-                            <Skill skillName={i} />
+                        this.state.learned.map((i, index) =>
+                            <Skill skillName={i} key={index} />
                         )
                     }
                 </Table>
