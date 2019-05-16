@@ -40,7 +40,7 @@ export default class SkillsContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            skills: ['- HTML5 -', '- CSS3 -', '- JavaScript -', '- React + React Native -', '- RWD -'],
+            skills: ['- HTML5 -', '- CSS3 -', '- JavaScript -', '- React + React Native -', '- RWD -', '- Język angielski B2  -', '- praca z systemami Linux -'],
             learned: ['- GIT -', '- Redux -', '- SASS -']
         };
     }
