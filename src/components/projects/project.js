@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 // ----- ikonki -----
+
 import gitHubIcon from './assets/icons/GitHub-Mark-64px.png'
 import wwwIcon from './assets/icons/www.png'
 
@@ -15,7 +16,7 @@ const Container = styled.div`
     position: relative
 `
 const Name = styled.p`
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: black;
     opacity: 1;
     margin-top: 3vw;
@@ -42,7 +43,7 @@ const HiddenDiv = styled.div`
     height: 20vw;
     top: 0
 `
-const Icon= styled.img`
+const Icon = styled.img`
     opacity: 1;
     margin: 1vw;
     width: 4vw;
@@ -50,6 +51,7 @@ const Icon= styled.img`
 `
 
 // -----  komponent  -----
+
 export default class Project extends Component {
     constructor(props) {
         super(props)
@@ -57,7 +59,7 @@ export default class Project extends Component {
             mouseIn: false
         };
     }
-    
+
     // ----- zmiana wyglądu po najechaniu myszką -----
 
     mouseChange = (e) => {
@@ -68,11 +70,11 @@ export default class Project extends Component {
     render() {
         return (
             <Container>
-                <Picture onMouseEnter={this.mouseChange}  src={this.props.image} alt={this.props.name} />
+                <Picture onMouseEnter={this.mouseChange} src={this.props.image} alt={this.props.name} />
                 <HiddenDiv mouseIn={this.state.mouseIn} onMouseLeave={this.mouseChange}>
                     <Name>{this.props.name}</Name>
-                    <Icon alt='giticon' src={gitHubIcon}/>
-                    <Icon alt ='www' src={wwwIcon}/>
+                    <a href={this.props.github} target='_blank'><Icon alt='giticon' src={gitHubIcon} /></a>
+                    <a href={this.props.website} target='_blank'><Icon alt='www' src={wwwIcon} /></a>
                 </HiddenDiv>
 
             </Container>

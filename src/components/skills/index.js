@@ -41,7 +41,7 @@ export default class SkillsContainer extends Component {
         super(props);
         this.state = {
             skills: ['- HTML5 -', '- CSS3 -', '- JavaScript -', '- React + React Native -', '- RWD -', '- Język angielski B2  -', '- praca z systemami Linux -'],
-            learned: ['- GIT -', '- Redux -', '- SASS -']
+            learned: ['- GIT -', '- Redux -', '- SASS - ']
         };
     }
     render() {

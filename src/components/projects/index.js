@@ -45,11 +45,14 @@ export default class ProjectsContainer extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            
+            // ----- tablica z danymi do projektow -----
+
             projects:
                 [
-                    ['Rpg Battle Simulator', 'https://rpg-battle-simulator.firebaseapp.com/', 'https://github.com/meho99/rpg-battle-simulator', Rpg],
-                    ['Pracownia Krawiecka Gosia', 'https://pracowniagosia.pl', '', Pracownia],
-                    ['Richard Whale', 'https://rysio-71d04.firebaseapp.com/', '', Rysio],
+                    ['RPG Battle Simulator', 'https://rpg-battle-simulator.firebaseapp.com/', 'https://github.com/meho99/rpg-battle-simulator', Rpg],
+                    ['Pracownia Krawiecka Gosia', 'https://pracowniagosia.pl', 'https://github.com/meho99/pracowniagosia', Pracownia],
+                    ['Richard Whale', 'https://rysio-71d04.firebaseapp.com/', 'https://github.com/meho99/richardWhale', Rysio],
                     ['Strona Portfolio', 'https://michal-topa-front-end.firebaseapp.com', 'https://github.com/meho99/portfolio-page', Portfolio]
                 ]
         };
