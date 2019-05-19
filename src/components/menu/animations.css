@@ -1,0 +1,44 @@
+
+  .menu__link{
+  
+    will-change: color;
+    transition: color .45s ease-out;  
+    text-transform: uppercase;
+  }
+  
+  .menu__link:focus{
+    outline: 0.2vw solid #fff;
+  }
+  
+  @media (min-width: 601px){
+  
+  
+    .menu__link:before, .menu__link:after{
+      content: "";
+      width: 0;
+      height: 0.1vw;
+      background-color: #9e9d24;
+  
+      will-change: width;
+      transition: width .09s ease-out;
+  
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .menu__link:before{
+      left: 50%;
+      transform: translateX(-50%); 
+    }
+  
+    .menu__link:after{
+      right: 50%;
+      transform: translateX(50%); 
+    }
+  
+    .menu__link:hover:before, .menu__link:hover:after{
+      width: 100%;
+      transition-duration: .45s;
+    }
+  }
+  

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
+import './animations.css'
 
 // ----- style -----
 
@@ -10,17 +11,18 @@ const Li = styled.div`
     
 `
 const Link = styled.a`
-    text-decoration: none,
-    color: white,
-    font-size: 55px;
-    border: ${props=> props.actuall ? '2px solid white':''};
+    color: ${props => props.actuall ? '#9e9d24' : 'white'};
     cursor: pointer;
+    position: relative;
+    &:hover{
+        color:#9e9d24;
+    };
 `
 // ----- koponent -----
 
-const MenuPart = ({ name, actuall, setActuall }) => 
-    <Li>
-        <Link onClick={()=>{setActuall(name)}} actuall={actuall} >{name}</Link>
+const MenuPart = ({ name, actuall, setActuall }) =>
+    <Li className='menu__group'>
+        <Link className='menu__link' onClick={() => { setActuall(name) }} actuall={actuall} >{name}</Link>
     </Li>
 
 
