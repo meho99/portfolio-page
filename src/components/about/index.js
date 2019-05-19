@@ -39,7 +39,7 @@ const UnderFace = styled.div`
 `
 const RightDiv = styled.div`
     width: 45vw;
-    border-left: 4px solid #9e9d24
+    border-left: 0.2vw solid #9e9d24
 `
 
 // ----- koponent -----

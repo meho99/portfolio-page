@@ -23,7 +23,7 @@ const Name = styled.p`
 `
 const Picture = styled.img`
     width: 40vw;
-    border: 0.3vw solid #9e9d24;
+    border: 0.2vw solid #9e9d24;
     border-radius: 12px;
     height: 20vw;
     -webkit-box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.54);
@@ -37,7 +37,7 @@ const HiddenDiv = styled.div`
     position: absolute;
     width: 40vw;
     border-radius: 12px;
-    border: 0.3vw solid #9e9d24;
+    border: 0.2vw solid #9e9d24;
     background-color: gray;
     opacity: 0.9;
     height: 20vw;
