@@ -73,8 +73,8 @@ export default class Project extends Component {
                 <Picture onMouseEnter={this.mouseChange} src={this.props.image} alt={this.props.name} />
                 <HiddenDiv mouseIn={this.state.mouseIn} onMouseLeave={this.mouseChange}>
                     <Name>{this.props.name}</Name>
-                    <a href={this.props.github} target='_blank'><Icon alt='giticon' src={gitHubIcon} /></a>
-                    <a href={this.props.website} target='_blank'><Icon alt='www' src={wwwIcon} /></a>
+                    <a href={this.props.github} rel="noopener noreferrer" target='_blank'><Icon alt='giticon' src={gitHubIcon} /></a>
+                    <a href={this.props.website} rel="noopener noreferrer" target='_blank'><Icon alt='www' src={wwwIcon} /></a>
                 </HiddenDiv>
 
             </Container>

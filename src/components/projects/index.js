@@ -32,6 +32,7 @@ const ProjectDiv = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-evenly;
+    margin-bottom: 2vw;
 `
 const StylP = styled.p`
     font-size: 2vw;
@@ -59,7 +60,7 @@ export default class ProjectsContainer extends Component {
     }
     render() {
         return (
-            <Container>
+            <Container ref={this.props.Ref}>
                 <Header>MOJE PROJEKTY &lt;&frasl;&gt; </Header>
                 <StylP>Oto kilka moich autorskich projektów zrealizowanych w ostatnim czasie :</StylP>
                 <ProjectDiv>

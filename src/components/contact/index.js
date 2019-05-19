@@ -52,8 +52,8 @@ const NextIcon = styled.p`
 
 // ----- koponent -----
 
-const ContactContainer = () =>
-    <Container>
+const ContactContainer = (props) =>
+    <Container ref={props.Ref}>
         <Header>KONTAKT &lt;&frasl;&gt;</Header>
         <OneLine>
             <HalfPageDiv left >

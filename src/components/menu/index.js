@@ -23,7 +23,7 @@ const Container = styled.div`
     }
 
 `
-const Logo= styled.p`
+const Logo = styled.p`
     color: #9e9d24 ;
     width: 30vw;
     font-size: 2vw;
@@ -35,23 +35,19 @@ const Logo= styled.p`
 // ----- komponent -----
 
 export default class Menu extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            hrefs: [
-                ['O MNIE', '#about'],
-                ['UMIEJĘTNOŚCI', '#skills'],
-                ['MOJE PROJEKTY', '#offer'],
-                ['KONTAKT', '#contact'],
-            ]
-        };
-    }
     render() {
         return (
             <Container>
                 <Logo>Michał Topa</Logo>
                 {
-                    this.state.hrefs.map((item, index) => <MenuPart name={item[0]} href={item[1]} key={index} />) // -- generowanie listy załączników z state --
+
+                    // -- generowanie listy załączników z props --
+
+                    this.props.names.map((item, index) =>
+                        this.props.actuall === item
+                            ? <MenuPart name={item} actuall={true} href={item} key={index} setActuall={this.props.setActuall} />
+                            : <MenuPart name={item} actuall={false} href={item} key={index} setActuall={this.props.setActuall} />)
+
                 }
             </Container>
         );

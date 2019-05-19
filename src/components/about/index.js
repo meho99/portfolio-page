@@ -44,8 +44,8 @@ const RightDiv = styled.div`
 
 // ----- koponent -----
 
-const AboutContainer = () =>
-    <Container>
+const AboutContainer = (props) =>
+    <Container ref={props.Ref}>
         <Header>
             O MNIE &lt;&frasl;&gt;
             </Header>

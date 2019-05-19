@@ -46,7 +46,7 @@ export default class SkillsContainer extends Component {
     }
     render() {
         return (
-            <Container>
+            <Container ref={this.props.Ref}>
                 <Header>UMIEJĘTNOŚCI &lt;&frasl;&gt; </Header>
                 <SmallHeader>Umiem :</SmallHeader>
                 <Table>
